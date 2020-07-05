@@ -1,0 +1,159 @@
+@font-face {
+    font-family: OpenSans;
+    src: url("../font/OpenSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url("../font/OpenSans-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    font-family: OpenSans;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Calibri;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: tomato;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: block;
+    padding: 12px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    height: 54px;
+    background-color: #fff;
+}
+
+.body {
+    margin-top: 54px;
+    flex-grow: 1;
+    padding: 10px 10%;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 14px;
+    padding: 20px;
+    background-color: #222;
+    color: #aaa;
+}
+
+.footer-tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-tab>div {
+    margin-left: 10px;
+    min-width: 250px;
+    width: 25%;
+    padding: 10px;
+}
+
+.footer-tab div b {
+    font-size: 16px;
+    color: #ccc;
+    margin-left: -10px;
+}
+
+.footer-social a img {
+    width: 25px;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+.pages-link a {
+    font-size: 16px;
+    padding-top: 8px;
+    display: block;
+    color: #aaa;
+}
+.menu-icon {
+    width: 40px;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 50%;
+    filter: brightness(0.3);
+}
+
+.menu-icon:active {
+    filter: brightness(1);
+    background-color: #555;
+}
+
+
+.menu {
+    top: -20px;
+    right: 0px;
+    padding-right: 20px;
+    height: 54px;
+    max-width: calc(100vw - 300px);
+    z-index: 4;
+
+    background-color: #fff;
+    position: fixed;
+    transition: .4s;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px;
+    padding-top: 15px;
+    height: 54px;
+
+    font-size: 16px;
+    color: #444;
+}
+
+.menu a:hover {
+    color: #ccc;
+    background-color: #333;
+}
+
+@media screen and (max-width: 700px) {
+    .menu {
+        max-width: 300px;
+        width: calc(100vw - 60px);
+        box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3);
+        height: calc(100vh - 54px);
+        top: 54px;
+        z-index: 2;
+        right: -400px;
+    }
+    .menu a {
+        display: block;
+        padding: 10px 0 10px 36px;
+        font-size: 18px;
+    }
+    .menu-open {
+        right: 0;
+    }
+}
