@@ -1,0 +1,28 @@
+<div class="header">
+    <div>
+        <img class="logo" src="res/media/logo_64.png" alt="Ramesh Electricals Jalandhar Logo">
+    </div>
+
+    <div style="margin: 0 10px;font-size: 22px;">
+        <span style="color: #ff5c33;">Ramesh </span><span style="color: #404040;">Electricals</span>
+    </div>
+
+    <div style="flex-grow: 1;"></div>
+
+    <div>
+        <img src="res/media/menu_64.png" class="menu-icon-fn menu-icon" id="menu-icon" alt="menu_icon">
+    </div>
+
+    <div class="menu" id="menu" style="background-image: url('res/media/body2.jpg');background-size: cover;background-position: right;">
+        <div class="menu-icon-fn menu-close-icon">&times;</div>
+        <a href="index.html">Home</a>
+        <a href="contact-us.html">Contact Us</a>
+        <a href="our-story.html">Our Story</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+</div>
+<script>
+    $(".menu-icon-fn").click(function () {
+        $("#menu").toggleClass("menu_open");
+    })
+</script>

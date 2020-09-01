@@ -1,0 +1,59 @@
+<div class="container">
+    <div id="reviews">
+    </div>
+    <br>
+    <div class="m-3 p-4 rounded-lg d-flex justify-content-center"
+        style="background-image: url('res/media/background_5.png');background-position: right;background-size: cover;">
+        <form method="POST" style="width: 100%; max-width: 500px;">
+            <style>
+                .col-md-7,
+                .col-md-5 {
+                    max-width: 400px;
+                }
+
+                label {
+                    background-color: rgba(255, 255, 255, 0.8);
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+            </style>
+            <div class="h4 text-dark"><strong>Add a review</strong></div>
+            <p>Tell others what you think</p>
+            <hr>
+
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <label for="review_name"><strong>Name</strong></label>
+                </div>
+                <div class="col-md-7">
+                    <input type="text" id="review_name" name="review_name" class="w-100 p-2 border rounded-lg"
+                        placeholder="Your name" maxlength="30" required>
+                </div>
+            </div><br>
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <label for="review_email"><strong> Email Address</strong></label>
+                </div>
+                <div class="col-md-7">
+                    <input type="email" id="review_email" name="review_email" class="w-100 p-2 border rounded-lg"
+                        placeholder="Your email address" required>
+                </div>
+            </div><br>
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <label for="review_description"><strong>Describe your experience</strong></label>
+                </div>
+                <div class="col-md-7">
+                    <textarea type="tel" id="review_description" name="review_description" rows="4"
+                        class="w-100 p-2 border rounded-lg" placeholder="Tell about us" required></textarea>
+                </div>
+            </div><br>
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <button class="btn btn-dark" onclick="review_submit(event)">ADD REVIEW</button>
+                    <script src="res/js/review.js"></script>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
