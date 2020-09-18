@@ -14,7 +14,7 @@ function review_submit(e) {
             fetch_review();
         },
         error: function () {
-            alert('Something went wrong. Please try again later.');
+            alert('Unable to add review try again later');
         }
     });
 }
@@ -34,7 +34,7 @@ function fetch_review() {
             }
         },
         error: function () {
-            alert('Something went wrong. Please try again later.');
+            $('#reviews').html('Unable to get reviews at this moment.');
         }
     });
 }
